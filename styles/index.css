@@ -102,7 +102,7 @@ textarea {
 
 /* --- BUTTONS AND LINKS --- */
 .btn-primary {
-    background-color: orangered;
+    background: orangered;
     color: white;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -111,4 +111,11 @@ textarea {
     border: none;
     margin-top: 1em;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-primary:focus,
+.btn-primary:hover {
+    color: orangered;
+    background: white;
 }

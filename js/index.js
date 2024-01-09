@@ -2,6 +2,8 @@ const postsContainer = document.getElementById('posts-container');
 const navBar = document.getElementById('nav-bar');
 const postForm = document.getElementById('post-form');
 
+let allPosts = [];
+
 postForm.addEventListener('submit', function (e) {
   e.preventDefault();
 
@@ -14,8 +16,21 @@ postForm.addEventListener('submit', function (e) {
     body: postBody,
   };
 
-  console.log(postData.title);
-  console.log(postData.body);
+  const options = {
+    method: 'POST',
+    body: JSON.stringify(postData),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  };
+
+  fetch('https://jsonplaceholder.typicode.com/posts', options)
+    .then((response) => response.json())
+    .then((post) => {
+      allPosts.unshift(post);
+      postsContainer.innerHTML = '';
+      renderPosts();
+    });
 });
 
 const renderNavBar = () => {
@@ -28,8 +43,8 @@ const renderNavBar = () => {
 
 renderNavBar();
 
-const renderPosts = (posts) => {
-  const html = posts
+const renderPosts = () => {
+  const html = allPosts
     .map((post) => {
       return `
         <div class="post-container">
@@ -46,6 +61,6 @@ const renderPosts = (posts) => {
 fetch('https://jsonplaceholder.typicode.com/posts')
   .then((response) => response.json())
   .then((data) => {
-    const posts = data.slice(0, 5);
-    renderPosts(posts);
+    allPosts = data.slice(0, 5);
+    renderPosts(allPosts);
   });
