@@ -1,5 +1,22 @@
 const postsContainer = document.getElementById('posts-container');
 const navBar = document.getElementById('nav-bar');
+const postForm = document.getElementById('post-form');
+
+postForm.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const formData = new FormData(postForm);
+  const postTitle = formData.get('postTitle');
+  const postBody = formData.get('postBody');
+
+  const postData = {
+    title: postTitle,
+    body: postBody,
+  };
+
+  console.log(postData.title);
+  console.log(postData.body);
+});
 
 const renderNavBar = () => {
   const html = `
