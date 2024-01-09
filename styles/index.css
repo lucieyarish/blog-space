@@ -1,0 +1,57 @@
+/* --- RESETS --- */
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+/* --- GENERAL SETUP --- */
+:root {
+    font-family: 'Karla', sans-serif;
+}
+
+/* --- TYPOGRAPHY --- */
+.title {
+    padding: 0.5em;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.post-title {
+    font-size: 1.6rem;
+    padding: 1em 0;
+}
+
+.post-text {
+    font-size: 1.25rem;
+}
+
+/* --- LAYOUT --- */
+main {
+    padding: 5.5em 1.5em 1.5em 1.5em;
+    background: rgb(2, 2, 94);
+    height: 100vh;
+    color: white;
+}
+
+.nav-bar {
+    color: blue;
+    background: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
