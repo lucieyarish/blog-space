@@ -39,11 +39,21 @@ p {
     font-size: 1.25rem;
 }
 
+label {
+    font-size: 1.2rem;
+    margin: 0.5em 0;
+    text-transform: uppercase;
+}
+
 /* --- LAYOUT --- */
-main {
-    padding: 5.5em 1.5em 1.5em 1.5em;
+body {
     background: rgb(2, 2, 94);
     height: 100vh;
+}
+main {
+    padding: 5.5em 1.5em 4em 1.5em;
+    /* background: rgb(2, 2, 94); */
+    /* height: 100vh; */
     color: white;
 }
 
@@ -54,4 +64,51 @@ main {
     align-items: center;
     position: fixed;
     width: 100%;
+}
+
+.post-container {
+    padding-bottom: 2em;
+}
+
+.post-container,
+.post-form {
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.691);
+}
+
+/* --- FORM --- */
+.post-form {
+    padding-top: 2em;
+    padding-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    resize: none;
+    min-height: 7em;
+}
+
+.form-input {
+    padding: 0.5em;
+    border-radius: 3px;
+    border: none;
+    outline-color: orangered;
+}
+
+/* --- BUTTONS AND LINKS --- */
+.btn-primary {
+    background-color: orangered;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    border-radius: 3px;
+    border: none;
+    margin-top: 1em;
+    font-weight: 700;
 }

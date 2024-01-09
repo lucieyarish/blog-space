@@ -15,8 +15,10 @@ const renderPosts = (posts) => {
   const html = posts
     .map((post) => {
       return `
-        <h2 class="post-title">${post.title}</h2>
-        <p class="post-text">${post.body}</p>
+        <div class="post-container">
+            <h2 class="post-title">${post.title}</h2>
+            <p class="post-text">${post.body}</p>
+        </div>
     `;
     })
     .join('');
