@@ -31,6 +31,8 @@ postForm.addEventListener('submit', function (e) {
       postsContainer.innerHTML = '';
       renderPosts();
     });
+
+  postForm.reset();
 });
 
 const renderNavBar = () => {
