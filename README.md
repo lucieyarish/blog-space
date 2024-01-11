@@ -1,6 +1,8 @@
 # BlogSpace
 👩🏻‍💻 BlogSpace website built while learning to work with APIs through [Frontend Developer Bootcamp](https://scrimba.com/learn/frontend)on Scrimba.
 
+You can view the live version here: https://blog-space-lucieyarish.netlify.app/
+
 BlogSpace fetches first 5 posts from [JSON Placeholder API](https://jsonplaceholder.typicode.com/) and also enables users to create new blog post via the form that then gets added to the listed blog posts.
 
 This project is a combination of code-along and building chunks of the website on my own through challenges set by the teacher. The design was created by me.
