@@ -5,12 +5,12 @@ BlogSpace fetches first 5 posts from [JSON Placeholder API](https://jsonplacehol
 
 This project is a combination of code-along and building chunks of the website on my own through challenges set by the teacher. The design was created by me.
 
-Fetch blog posts from the API:
+##### Fetch blog posts from the API
 <img width="689" alt="Screenshot 2024-01-11 at 10 01 51" src="https://github.com/lucieyarish/blog-space/assets/79669599/207d4b10-73ef-4182-8410-3d77c2712abe">
 
-Add new blog post:
-<img width="350" alt="Screenshot 2024-01-11 at 10 02 28" src="https://github.com/lucieyarish/blog-space/assets/79669599/7d73a7e4-d04c-4058-a2e1-cc873a6fb52a">
-<img width="350" alt="Screenshot 2024-01-11 at 10 02 49" src="https://github.com/lucieyarish/blog-space/assets/79669599/4f9089c0-ad6c-4103-9e80-55329605d676">
+##### Add new blog post
+<img width="680" alt="Screenshot 2024-01-11 at 10 02 28" src="https://github.com/lucieyarish/blog-space/assets/79669599/7d73a7e4-d04c-4058-a2e1-cc873a6fb52a">
+<img width="689" alt="Screenshot 2024-01-11 at 10 02 49" src="https://github.com/lucieyarish/blog-space/assets/79669599/4f9089c0-ad6c-4103-9e80-55329605d676">
 
 
 While working on this project via Scrimba's Frontend Developer Career Path, I learned/practiced the following concepts:
