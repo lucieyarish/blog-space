@@ -114,7 +114,7 @@ textarea {
     cursor: pointer;
 }
 
-.btn-primary:focus,
+.btn-primary:active,
 .btn-primary:hover {
     color: orangered;
     background: white;
